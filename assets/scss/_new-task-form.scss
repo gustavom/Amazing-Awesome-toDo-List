@@ -40,6 +40,10 @@
                         font-size: 12px;
                     }
                 }
+                .textarea {
+                    height: 130px;
+                    resize: none;
+                }
                 .label {
                     transition: all .2s ease-in-out;
                     cursor: text;
