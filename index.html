@@ -24,18 +24,18 @@
             </h3>
             <form action="/" data-js="new-task-form">
                 <div class="field">
-                    <input type="text" data-js="new-task-title" />
-                    <label>Título</label>
+                    <input class="input" name="task-title" id="task-title" type="text" data-js="new-task-title" />
+                    <label class="label" for="task-title">Título</label>
                 </div>
                 <div class="field">
-                    <textarea data-js="new-task-text"></textarea>
-                    <label>Criar uma nota...</label>
+                    <textarea class="textarea" name="task-text" id="task-text" data-js="new-task-text"></textarea>
+                    <label class="label" for="task-text">Criar uma nota...</label>
                 </div>
-                <button data-js="new-task-btn">Concluído</button>
+                <button class="button-submit" data-js="new-task-btn">Concluído</button>
             </form>
         </div>
     </div>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
