@@ -15,7 +15,13 @@ body {
 }
 
 .text-initial {
-    font-size: 18px;
     padding: 25px;
-    font-weight: 700;
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
 }
+
+@import "_variables";
+@import "_mixin";
+@import "_new-task-form.scss";
