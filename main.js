@@ -8,8 +8,18 @@
 
         return {
             init: function () {
+                this.initEvents();
                 this.verifyInputs();
             },
+            
+            initEvents: function initEvents() {
+                $newTaskForm.addEventListener('submit', this.handleSubmit, false);
+            },
+            
+            handleSubmit: function handleSubmit(event){
+                event.preventDefault();
+            },
+
             verifyInputs: function verifyInputs() {
                 $newTaskTitle.addEventListener('blur', function () {
                     if (this.value !== "") {
@@ -26,7 +36,7 @@
                         this.parentNode.classList.remove('active');
                     }
                 }, false);
-            },
+            }
         }
     })();
 

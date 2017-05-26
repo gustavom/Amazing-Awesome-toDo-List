@@ -21,3 +21,11 @@ $smartphone-wide: 650px;
 //
 //smartphone portrait = sn
 $smartphone-normal: 480px;
+
+// Z-index
+$z-index:(
+    floor: 1,
+    Secondfloor: 2,
+    Thirdfloor: 3,
+    Fourtyfloor: 4
+);
