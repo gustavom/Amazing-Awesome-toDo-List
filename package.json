@@ -1,0 +1,23 @@
+{
+  "name": "amazing-awesome-todo-list",
+  "version": "0.0.1",
+  "description": "Amazing Awesome toDo List",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavom/Amazing-Awesome-toDo-List.git"
+  },
+  "keywords": [
+    "toDo",
+    "List"
+  ],
+  "author": "Gustavo Martusewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavom/Amazing-Awesome-toDo-List/issues"
+  },
+  "homepage": "https://github.com/gustavom/Amazing-Awesome-toDo-List#readme"
+}
