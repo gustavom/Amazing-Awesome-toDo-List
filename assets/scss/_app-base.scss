@@ -1,0 +1,25 @@
+.app-container {
+    position: relative;
+    z-index: map-get($z-index, Secondfloor);
+    width: 100%;
+    display: flex;
+    //align-items: center;
+    .app-collumn {
+        flex: 1 50%;
+        padding: 0 20px;
+        &.order-1 {
+            order: 1;
+        }
+        &.order-2 {
+            order: 2;
+        }
+        &+.app-collumn {
+            .new-task-form-container {
+                &.half-box {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

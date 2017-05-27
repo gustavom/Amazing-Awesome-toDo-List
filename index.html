@@ -19,24 +19,34 @@
         </h1>
     </div>
 
-    <div class="new-task-form-container">
-        <div class="inner">
-            <h3>
-                Create your new awesome task
-            </h3>
-            <form action="/" data-js="new-task-form">
-                <div class="field">
-                    <input class="input" name="task-title" id="task-title" type="text" data-js="new-task-title" />
-                    <label class="label" for="task-title">Título</label>
-                    <span class="form-helper" data-js="task-title-helper"></span>
+    <div class="app-container" data-js="app-container">
+       <div class="app-collumn order-2 tasks-items-container">
+           <div class="task-box" id="902930213">
+               <div class="title">Title Task</div>
+               <div class="text">Title Texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, erat at laoreet porttitor, lacus orci sodales mauris, lacinia hendrerit ex nisi eu metus.</div>
+           </div>
+       </div>
+        <div class="app-collumn order-1">
+            <div class="new-task-form-container half-box">
+                <div class="inner">
+                    <h3>
+                        Create your new awesome task
+                    </h3>
+                    <form action="/" data-js="new-task-form">
+                        <div class="field">
+                            <input class="input" name="task-title" id="task-title" type="text" data-js="new-task-title" />
+                            <label class="label" for="task-title">Título</label>
+                            <span class="form-helper" data-js="task-title-helper"></span>
+                        </div>
+                        <div class="field">
+                            <textarea class="textarea" name="task-text" id="task-text" data-js="new-task-text"></textarea>
+                            <label class="label" for="task-text">Criar uma nota...</label>
+                            <span class="form-helper" data-js="task-text-helper"></span>
+                        </div>
+                        <button class="button-submit" data-js="new-task-btn">Concluído</button>
+                    </form>
                 </div>
-                <div class="field">
-                    <textarea class="textarea" name="task-text" id="task-text" data-js="new-task-text"></textarea>
-                    <label class="label" for="task-text">Criar uma nota...</label>
-                    <span class="form-helper" data-js="task-text-helper"></span>
-                </div>
-                <button class="button-submit" data-js="new-task-btn">Concluído</button>
-            </form>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>

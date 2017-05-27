@@ -1,11 +1,15 @@
 .new-task-form-container {
     //width: 1140px;
-    width: 500px;
+    width: 100%;
     max-width: 100%;
-    margin: 0 auto;
+    //margin: 0 auto;
     position: relative;
     z-index: map-get($z-index, Secondfloor);
     @include cf();
+    &.half-box{
+        width: 50%;
+        margin: 0 auto;
+    }
     .inner {
         width: 100%;
         @include cf();

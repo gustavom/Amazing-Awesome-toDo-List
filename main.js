@@ -8,7 +8,9 @@
             $newTaskText = doc.querySelector('[data-js="new-task-text"]'),
             $newsTaskTitleHelper = doc.querySelector('[data-js="task-title-helper"]'),
             $newsTaskTextHelper = doc.querySelector('[data-js="task-text-helper"]'),
-            $DataStorage = [];
+            $DataStorage = [],
+            $appContainer = doc.querySelector('[data-js="app-container"]'),
+            $tasksCollumn = doc.createElement('div');
 
         return {
             init: function () {
@@ -25,10 +27,6 @@
                 app.registerTask();
             },
             registerTask: function registerTask() {
-                console.log($newTaskTitle.value);
-                console.log($newTaskText.value);
-                /*if( app.validateFormTask() ){
-                    return;*/
                 if (!app.validateFormTask())
                     return;
 
@@ -38,19 +36,14 @@
                     text: $newTaskText.value
                 }
                 $DataStorage.push($newTaskObject);
-                console.log($DataStorage);
+                console.log(JSON.stringify($DataStorage));
                 app.clearForm();
-
+                app.createTaskCollumn();
             },
 
             validateFormTask: function validateFormTask() {
                 if ($newTaskTitle.value == '') {
                     $newsTaskTitleHelper.textContent = 'preencha o título.';
-                    return false;
-                }
-                if ($newTaskTitle.value == '' && $newTaskText.value != '') {
-                    $newsTaskTitleHelper.textContent = 'preencha o título.';
-                    $newsTaskTextHelper.textContent = '';
                     return false;
                 }
 
@@ -59,16 +52,43 @@
                     return false;
                 }
 
-                if ($newTaskText.value == '' && $newTaskTitle.value != '') {
-                    $newsTaskTitleHelper.textContent = '';
-                    $newsTaskTextHelper.textContent = 'preencha a sua tarefa.';
-                    return false;
-                }
-
                 $newsTaskTitleHelper.textContent = '';
                 $newsTaskTextHelper.textContent = '';
                 return true;
 
+            },
+
+            createTaskCollumn: function createTaskCollumn() {
+                console.log('criando');
+                $tasksCollumn.classList.add('app-collumn')
+                $tasksCollumn.classList.add('order-2')
+                $tasksCollumn.classList.add('tasks-items-container')
+                $appContainer.prepend($tasksCollumn);
+                app.getTaskList();
+            },
+
+            createTaskItem: function createTaskItem(array, index) {
+                var $taskItemBox = doc.createElement('div'),
+                    $taskItemBoxTitle = doc.createElement('div'),
+                    $taskItemBoxText = doc.createElement('div');
+
+                $taskItemBox.classList.add('task-box');
+                $taskItemBoxTitle.classList.add('title');
+                $taskItemBoxText.classList.add('text');
+                
+                $taskItemBoxTitle.textContent = array[index].title;
+                $taskItemBoxText.textContent = array[index].text;
+                
+                $taskItemBox.appendChild($taskItemBoxTitle);
+                $taskItemBox.appendChild($taskItemBoxText);
+            },
+            
+            getTaskList: function getTaskList(){
+                var i = 0;
+                
+                for (var k in $DataStorage) {
+                        $appContainer.appendChild(app.createTaskItem($DataStorage, k));
+                    };
             },
 
             clearForm: function clearForm() {
@@ -103,3 +123,8 @@
     app.init();
 
 })(window, document);
+
+// https://developer.mozilla.org/pt-BR/docs/Web/API/Storage/setItem
+// https://zenorocha.com/html5-local-storage/
+//https://www.youtube.com/watch?v=BfL3pprhnms - service worker
+//https://www.youtube.com/watch?v=zPYzW0xIjqA - load js

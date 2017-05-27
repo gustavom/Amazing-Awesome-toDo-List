@@ -1,0 +1,16 @@
+.tasks-items-container{
+    padding-top: 35px !important;
+    &>.task-box{
+        border: solid 1px #616161;
+        padding: 15px;
+        .title{
+            font-size: 18px;
+            font-weight: 700;
+            color: #b3b3b3;
+            padding-bottom: 15px;
+        }
+        .text{
+            line-height: 1.5;
+        }
+    }
+}

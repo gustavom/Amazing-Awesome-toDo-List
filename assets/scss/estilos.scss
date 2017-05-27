@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 //some styles reference  http://demos.creative-tim.com/now-ui-kit/index.html#
+
+@import "_variables";
+@import "_mixin";
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -16,6 +19,9 @@ body {
 }
 
 .text-initial {
+    position: relative;
+    width: 100%;
+    z-index: map-get($z-index, Secondfloor);
     padding: 25px;
     h1 {
         font-size: 18px;
@@ -23,7 +29,7 @@ body {
     }
 }
 
-@import "_variables";
-@import "_mixin";
+@import "_app-base.scss";
 @import "_new-task-form.scss";
 @import "_page-background.scss";
+@import "_tasks-collumn.scss";
