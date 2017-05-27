@@ -4,14 +4,19 @@
     ### MEDIA QUERIES BREAKPOINTS
 
 */
-/* line 6, ../scss/estilos.scss */
+/* line 5, assets/scss/estilos.scss */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 12, ../scss/estilos.scss */
+/* line 10, assets/scss/estilos.scss */
+html {
+  height: 100%;
+}
+
+/* line 14, assets/scss/estilos.scss */
 body {
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
@@ -21,102 +26,119 @@ body {
   color: #eaeaea;
 }
 
-/* line 21, ../scss/estilos.scss */
+/* line 23, assets/scss/estilos.scss */
 .text-initial {
   position: relative;
   width: 100%;
   z-index: 2;
   padding: 25px;
 }
-/* line 26, ../scss/estilos.scss */
+
+/* line 28, assets/scss/estilos.scss */
 .text-initial h1 {
   font-size: 18px;
   font-weight: 700;
 }
 
-/* line 1, ../scss/_app-base.scss */
+/* line 1, assets/scss/_app-base.scss */
 .app-container {
   position: relative;
   z-index: 2;
   width: 100%;
   display: flex;
 }
-/* line 7, ../scss/_app-base.scss */
+
+/* line 7, assets/scss/_app-base.scss */
 .app-container .app-collumn {
   flex: 1 50%;
   padding: 0 20px;
 }
-/* line 10, ../scss/_app-base.scss */
+
+/* line 10, assets/scss/_app-base.scss */
 .app-container .app-collumn.order-1 {
   order: 1;
 }
-/* line 13, ../scss/_app-base.scss */
+
+/* line 13, assets/scss/_app-base.scss */
 .app-container .app-collumn.order-2 {
   order: 2;
 }
-/* line 18, ../scss/_app-base.scss */
+
+/* line 18, assets/scss/_app-base.scss */
 .app-container .app-collumn + .app-collumn .new-task-form-container.half-box {
   width: 100%;
   margin: 0;
 }
 
-/* line 1, ../scss/_new-task-form.scss */
+/* line 1, assets/scss/_new-task-form.scss */
 .new-task-form-container {
   width: 100%;
   max-width: 100%;
   position: relative;
   z-index: 2;
 }
-/* line 3, ../scss/_mixin.scss */
+
+/* line 3, assets/scss/_mixin.scss */
 .new-task-form-container:before, .new-task-form-container:after {
   content: " ";
   display: table;
 }
-/* line 8, ../scss/_mixin.scss */
+
+/* line 8, assets/scss/_mixin.scss */
 .new-task-form-container:after {
   clear: both;
 }
-/* line 11, ../scss/_mixin.scss */
+
+/* line 11, assets/scss/_mixin.scss */
 .new-task-form-container {
   *zoom: 1;
 }
-/* line 9, ../scss/_new-task-form.scss */
+
+/* line 9, assets/scss/_new-task-form.scss */
 .new-task-form-container.half-box {
   width: 50%;
   margin: 0 auto;
 }
-/* line 13, ../scss/_new-task-form.scss */
+
+/* line 13, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner {
   width: 100%;
 }
-/* line 3, ../scss/_mixin.scss */
+
+/* line 3, assets/scss/_mixin.scss */
 .new-task-form-container .inner:before, .new-task-form-container .inner:after {
   content: " ";
   display: table;
 }
-/* line 8, ../scss/_mixin.scss */
+
+/* line 8, assets/scss/_mixin.scss */
 .new-task-form-container .inner:after {
   clear: both;
 }
-/* line 11, ../scss/_mixin.scss */
+
+/* line 11, assets/scss/_mixin.scss */
 .new-task-form-container .inner {
   *zoom: 1;
 }
-/* line 16, ../scss/_new-task-form.scss */
+
+/* line 16, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner h3 {
   padding: 0 0 25px;
 }
-/* line 19, ../scss/_new-task-form.scss */
+
+/* line 19, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form {
   width: 100%;
 }
-/* line 21, ../scss/_new-task-form.scss */
+
+/* line 21, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field {
   position: relative;
   width: 100%;
   margin: 0 0 25px;
 }
-/* line 25, ../scss/_new-task-form.scss */
+
+/* line 25, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .input,
 .new-task-form-container .inner form .field .textarea {
   width: 100%;
@@ -131,21 +153,24 @@ body {
   outline: none;
   overflow: visible;
 }
-/* line 38, ../scss/_new-task-form.scss */
+
+/* line 38, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .input + .label,
 .new-task-form-container .inner form .field .textarea + .label {
   position: absolute;
   top: 8px;
   left: 10px;
 }
-/* line 43, ../scss/_new-task-form.scss */
+
+/* line 43, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .input:focus + .label,
 .new-task-form-container .inner form .field .textarea:focus + .label {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
   font-size: 12px;
 }
-/* line 49, ../scss/_new-task-form.scss */
+
+/* line 49, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .form-helper {
   display: block;
   width: 100%;
@@ -153,28 +178,33 @@ body {
   font-style: italic;
   color: #E64A19;
 }
-/* line 55, ../scss/_new-task-form.scss */
+
+/* line 55, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .form-helper:empty {
   padding: 0;
 }
-/* line 59, ../scss/_new-task-form.scss */
+
+/* line 59, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .textarea {
   height: 130px;
   resize: none;
 }
-/* line 63, ../scss/_new-task-form.scss */
+
+/* line 63, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .label {
   transition: all .2s ease-in-out;
   cursor: text;
 }
-/* line 70, ../scss/_new-task-form.scss */
+
+/* line 70, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field.active .input + .label,
 .new-task-form-container .inner form .field.active .textarea + .label {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
   font-size: 12px;
 }
-/* line 78, ../scss/_new-task-form.scss */
+
+/* line 78, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .button-submit {
   width: 100%;
   height: 50px;
@@ -189,47 +219,63 @@ body {
   cursor: pointer;
   transition: all .1s ease-in-out;
 }
-/* line 91, ../scss/_new-task-form.scss */
+
+/* line 91, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .button-submit:active {
   box-shadow: 0px -2px 0px 0px #333333;
   transform: translatey(2px);
 }
 
-/* line 1, ../scss/_page-background.scss */
+/* line 1, assets/scss/_page-background.scss */
 .page-bg {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
   z-index: 1;
 }
-/* line 8, ../scss/_page-background.scss */
+
+/* line 9, assets/scss/_page-background.scss */
 .page-bg .image-container {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   z-index: -1;
-  background: url(../img/bg.jpg);
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.2;
 }
 
-/* line 1, ../scss/_tasks-collumn.scss */
+/* line 1, assets/scss/_tasks-collumn.scss */
 .tasks-items-container {
   padding-top: 35px !important;
 }
-/* line 3, ../scss/_tasks-collumn.scss */
+
+/* line 3, assets/scss/_tasks-collumn.scss */
 .tasks-items-container > .task-box {
   border: solid 1px #616161;
   padding: 15px;
 }
-/* line 6, ../scss/_tasks-collumn.scss */
+
+/* line 6, assets/scss/_tasks-collumn.scss */
 .tasks-items-container > .task-box .title {
   font-size: 18px;
   font-weight: 700;
   color: #b3b3b3;
   padding-bottom: 15px;
 }
-/* line 12, ../scss/_tasks-collumn.scss */
+
+/* line 12, assets/scss/_tasks-collumn.scss */
 .tasks-items-container > .task-box .text {
   line-height: 1.5;
 }
+
+/* line 15, assets/scss/_tasks-collumn.scss */
+.tasks-items-container > .task-box + .task-box {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=../../sass */

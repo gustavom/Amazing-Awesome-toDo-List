@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/gustavom/Amazing-Awesome-toDo-List/issues"
   },
-  "homepage": "https://github.com/gustavom/Amazing-Awesome-toDo-List#readme"
+  "homepage": "https://github.com/gustavom/Amazing-Awesome-toDo-List#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11",
+    "browser-sync": "^2.18.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "~0.1.0",
+    "gulp-load-plugins": "^1.5.0"
+  }
 }

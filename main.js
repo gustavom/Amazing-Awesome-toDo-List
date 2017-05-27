@@ -24,6 +24,7 @@
 
             handleSubmit: function handleSubmit(event) {
                 event.preventDefault();
+                app.clearTaskCollumn();
                 app.registerTask();
             },
             registerTask: function registerTask() {
@@ -68,27 +69,35 @@
             },
 
             createTaskItem: function createTaskItem(array, index) {
-                var $taskItemBox = doc.createElement('div'),
+                var $fragment = document.createDocumentFragment(),
+                    $taskItemBox = doc.createElement('div'),
                     $taskItemBoxTitle = doc.createElement('div'),
                     $taskItemBoxText = doc.createElement('div');
 
                 $taskItemBox.classList.add('task-box');
                 $taskItemBoxTitle.classList.add('title');
                 $taskItemBoxText.classList.add('text');
-                
+
                 $taskItemBoxTitle.textContent = array[index].title;
                 $taskItemBoxText.textContent = array[index].text;
-                
+
                 $taskItemBox.appendChild($taskItemBoxTitle);
                 $taskItemBox.appendChild($taskItemBoxText);
+                $taskItemBox.setAttribute('id', array[index].id);
+                
+                return $fragment.appendChild($taskItemBox); 
             },
             
-            getTaskList: function getTaskList(){
+            clearTaskCollumn: function clearTaskCollumn(){
+                $tasksCollumn.innerHTML = '';
+            },
+
+            getTaskList: function getTaskList() {
                 var i = 0;
-                
-                for (var k in $DataStorage) {
-                        $appContainer.appendChild(app.createTaskItem($DataStorage, k));
-                    };
+
+                for (var i in $DataStorage) {
+                    $tasksCollumn.appendChild(app.createTaskItem($DataStorage, i));
+                };
             },
 
             clearForm: function clearForm() {

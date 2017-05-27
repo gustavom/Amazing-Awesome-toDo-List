@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 //some styles reference  http://demos.creative-tim.com/now-ui-kit/index.html#
-
 @import "_variables";
 @import "_mixin";
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+html{
+    height: 100%;
 }
 
 body {

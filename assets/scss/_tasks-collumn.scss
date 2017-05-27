@@ -12,5 +12,8 @@
         .text{
             line-height: 1.5;
         }
+        & + .task-box{
+            margin-top: 25px;
+        }
     }
 }
