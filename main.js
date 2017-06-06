@@ -137,3 +137,8 @@
 // https://zenorocha.com/html5-local-storage/
 //https://www.youtube.com/watch?v=BfL3pprhnms - service worker
 //https://www.youtube.com/watch?v=zPYzW0xIjqA - load js
+
+//http://blog.caelum.com.br/webstorage-persistencia-no-front-end/
+
+
+//https://github.com/henryaraujo/LSLib
