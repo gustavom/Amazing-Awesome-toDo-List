@@ -142,3 +142,4 @@
 
 
 //https://github.com/henryaraujo/LSLib
+//https://www.html5rocks.com/en/tutorials/offline/storage/
