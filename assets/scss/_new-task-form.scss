@@ -6,9 +6,13 @@
     position: relative;
     z-index: map-get($z-index, Secondfloor);
     @include cf();
-    &.half-box{
-        width: 50%;
+    &.half-box {
+        //width: 50%;
+        width: 100%;
         margin: 0 auto;
+        @include mqrange(660px, 5000px) {
+            width: 50%;
+        }
     }
     .inner {
         width: 100%;
@@ -52,7 +56,7 @@
                     padding: 10px 3px;
                     font-style: italic;
                     color: #E64A19;
-                    &:empty{
+                    &:empty {
                         padding: 0;
                     }
                 }
