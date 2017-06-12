@@ -142,4 +142,6 @@
 
 
 //https://github.com/henryaraujo/LSLib
-//https://www.html5rocks.com/en/tutorials/offline/storage/
+//https://www.html5rocks.com/en/tutorials/offline/storage
+//http://engenharia.elo7.com.br/a-tecnologia-por-tras-de-progressive-web-apps/
+//http://slides.com/williamgrasel/desbravando-progressive-web-apps#/
