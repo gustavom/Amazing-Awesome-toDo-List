@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 /*
 
     ### MEDIA QUERIES BREAKPOINTS
@@ -14,11 +13,18 @@
 /* line 10, assets/scss/estilos.scss */
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 14, assets/scss/estilos.scss */
+@font-face {
+  font-family: 'Menlo-Regular';
+  src: local("Menlo-Regular"), url("assets/fonts/Menlo-Regular.ttf") format("ttf");
+}
+
+/* line 22, assets/scss/estilos.scss */
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Menlo-Regular';
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -26,7 +32,7 @@ body {
   color: #eaeaea;
 }
 
-/* line 23, assets/scss/estilos.scss */
+/* line 32, assets/scss/estilos.scss */
 .text-initial {
   position: relative;
   width: 100%;
@@ -34,7 +40,7 @@ body {
   padding: 25px;
 }
 
-/* line 28, assets/scss/estilos.scss */
+/* line 37, assets/scss/estilos.scss */
 .text-initial h1 {
   font-size: 18px;
   font-weight: 700;
