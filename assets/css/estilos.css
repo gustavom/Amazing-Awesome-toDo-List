@@ -19,7 +19,7 @@ html {
 
 @font-face {
   font-family: 'Menlo-Regular';
-  src: url("https://github.com/gustavom/Amazing-Awesome-toDo-List/raw/master/assets/fonts/Menlo-Regular.ttf");
+  src: url("../fonts/Menlo-Regular.ttf");
 }
 
 /* line 22, assets/scss/estilos.scss */
@@ -159,7 +159,7 @@ body {
   border-bottom: solid 1px rgba(255, 255, 255, 0.05);
   background-color: rgba(255, 255, 255, 0.05);
   padding: 10px 8px 8px;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Menlo-Regular';
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
@@ -167,7 +167,7 @@ body {
   overflow: visible;
 }
 
-/* line 42, assets/scss/_new-task-form.scss */
+/* line 43, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .input + .label,
 .new-task-form-container .inner form .field .textarea + .label {
   position: absolute;
@@ -175,7 +175,7 @@ body {
   left: 10px;
 }
 
-/* line 47, assets/scss/_new-task-form.scss */
+/* line 48, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .input:focus + .label,
 .new-task-form-container .inner form .field .textarea:focus + .label {
   -webkit-transform: translateY(-200%);
@@ -183,7 +183,7 @@ body {
   font-size: 12px;
 }
 
-/* line 53, assets/scss/_new-task-form.scss */
+/* line 54, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .form-helper {
   display: block;
   width: 100%;
@@ -192,24 +192,24 @@ body {
   color: #E64A19;
 }
 
-/* line 59, assets/scss/_new-task-form.scss */
+/* line 60, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .form-helper:empty {
   padding: 0;
 }
 
-/* line 63, assets/scss/_new-task-form.scss */
+/* line 64, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .textarea {
   height: 130px;
   resize: none;
 }
 
-/* line 67, assets/scss/_new-task-form.scss */
+/* line 68, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field .label {
   transition: all .2s ease-in-out;
   cursor: text;
 }
 
-/* line 74, assets/scss/_new-task-form.scss */
+/* line 75, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .field.active .input + .label,
 .new-task-form-container .inner form .field.active .textarea + .label {
   -webkit-transform: translateY(-200%);
@@ -217,12 +217,12 @@ body {
   font-size: 12px;
 }
 
-/* line 82, assets/scss/_new-task-form.scss */
+/* line 83, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .button-submit {
   width: 100%;
   height: 50px;
   text-align: center;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Menlo-Regular';
   font-weight: 700;
   font-size: 16px;
   color: #cccccc;
@@ -233,7 +233,7 @@ body {
   transition: all .1s ease-in-out;
 }
 
-/* line 95, assets/scss/_new-task-form.scss */
+/* line 97, assets/scss/_new-task-form.scss */
 .new-task-form-container .inner form .button-submit:active {
   box-shadow: 0px -2px 0px 0px #333333;
   transform: translatey(2px);
