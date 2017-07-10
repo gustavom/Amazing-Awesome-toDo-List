@@ -19,7 +19,7 @@ html {
 
 @font-face {
   font-family: 'Menlo-Regular';
-  src: local("Menlo-Regular"), url("assets/fonts/Menlo-Regular.ttf") format("ttf");
+  src: url("https://github.com/gustavom/Amazing-Awesome-toDo-List/raw/master/assets/fonts/Menlo-Regular.ttf");
 }
 
 /* line 22, assets/scss/estilos.scss */
